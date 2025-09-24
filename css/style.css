@@ -1,0 +1,140 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    padding-top: 13vh;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0.1vw 0px 1vh rgba(0, 0, 0, 0.7);
+    background-color: white;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    top: 0;
+    left:0;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    width: 13vw;
+    height: 13vh;
+}
+
+.cabecalho nav{
+    flex: 1;
+}
+
+.cabecalho nav ul{
+    display: flex;
+    margin:0;
+    padding:0;
+    gap: 9vw;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    color: black;
+}
+
+.cabecalho nav ul li{
+    font-size: 1.5vw;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.container img{
+    margin:0px;
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    background-color: transparent;
+    position: relative;
+    display: inline-block;
+}
+
+.txt-imagem{
+    position: absolute;
+    top: 39vh;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 5vw;
+    text-shadow: 1vw 1vh 2vh black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.galeria-cards{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 2vh;
+    justify-content: center;
+    padding-bottom: 5vh;
+}
+
+.card{
+    background-color: white;
+    border-radius:1vw;
+    box-shadow: 0.1vw 0.1vh 1vh rgba(0, 0, 0, 0.5);
+    width: 19vw;
+    display: flex;
+    object-fit: cover;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img{
+    width: 90%;
+    height: 20vh;
+    border-radius: 1vw;
+    border: 1px solid black;
+    margin-top: 1vh;
+    object-fit: cover;
+}
+
+.card p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3vw;
+    text-align: center;
+    padding: 0px 1vw 0px 1vw;
+    margin:0;
+    margin-bottom: 2vh;
+    display: flex;
+    color: rgb(80, 80, 80);
+    flex-grow: 1;
+}
+
+.titulo-card{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(143, 24, 24);
+    margin-top: 1vh;
+    margin-bottom: 0.5vh;
+}
+
+.rodape{
+    background-color: #e7e7e7;
+    text-align: center;
+    padding: 1vh 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3vw;
+    color: #666;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -0.1vh 1vh rgba(0, 0, 0, 0.1);
+}
