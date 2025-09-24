@@ -1,7 +1,7 @@
 body{
     margin: 0px;
     padding: 0px;
-    padding-top: 13vh;
+    padding-top: 11vh;
     overflow-x: hidden;
     box-sizing: border-box;
 }
@@ -24,8 +24,8 @@ body{
 .logo{
     display: flex;
     justify-content: flex-start;
-    width: 13vw;
-    height: 13vh;
+    width: 9vw;
+    height: 11vh;
 }
 
 .cabecalho nav{
@@ -40,11 +40,12 @@ body{
     justify-content: center;
     align-items: center;
     list-style: none;
-    color: black;
+    color: rgb(8, 8, 8);
+    text-shadow: 0.3vw 0.3vh 1vh rgb(143, 143, 143);
 }
 
 .cabecalho nav ul li{
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     cursor: pointer;
     font-weight: bold;
 }
@@ -61,7 +62,7 @@ body{
 
 .txt-imagem{
     position: absolute;
-    top: 39vh;
+    top: 35vh;
     left: 52%;
     transform: translate(-50%, -50%);
     font-weight: bold;
@@ -88,7 +89,7 @@ body{
     background-color: white;
     border-radius:1vw;
     box-shadow: 0.1vw 0.1vh 1vh rgba(0, 0, 0, 0.5);
-    width: 19vw;
+    width: 15vw;
     display: flex;
     object-fit: cover;
     flex-direction: column;
@@ -97,7 +98,7 @@ body{
 
 .card img{
     width: 90%;
-    height: 20vh;
+    height: 17vh;
     border-radius: 1vw;
     border: 1px solid black;
     margin-top: 1vh;
@@ -106,7 +107,7 @@ body{
 
 .card p{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3vw;
+    font-size: 1vw;
     text-align: center;
     padding: 0px 1vw 0px 1vw;
     margin:0;
@@ -118,7 +119,7 @@ body{
 
 .titulo-card{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     text-align: center;
     font-weight: bold;
     color: rgb(143, 24, 24);
