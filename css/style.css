@@ -1,15 +1,23 @@
 body{
     margin: 0px;
     padding: 0px;
-    padding-top: 13vh;
+    padding-top: 16vh;
     overflow-x: hidden;
     box-sizing: border-box;
 }
 
+.txt{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5vw;
+    color: rgb(143, 24, 24);
+}
+
+/*Cabeçalho*/
+
 .cabecalho{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: column;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     box-shadow: 0.1vw 0px 1vh rgba(0, 0, 0, 0.7);
@@ -19,13 +27,14 @@ body{
     width: 100%;
     top: 0;
     left:0;
+    padding-bottom: 2vh;
 }
 
 .logo{
     display: flex;
-    justify-content: flex-start;
-    width: 13vw;
-    height: 13vh;
+    justify-content: center;
+    width: 11vw;
+    height: 12vh;
 }
 
 .cabecalho nav{
@@ -36,34 +45,48 @@ body{
     display: flex;
     margin:0;
     padding:0;
-    gap: 9vw;
+    gap: 11vw;
     justify-content: center;
     align-items: center;
     list-style: none;
-    color: black;
+    color: rgb(103, 103, 103);
 }
 
 .cabecalho nav ul li{
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     cursor: pointer;
     font-weight: bold;
+    transition: 0.30s;
+}
+
+.cabecalho nav ul li:hover{
+    transition: 0.30s;
+    transform: scale(1.2);
+    color: rgb(143, 24, 24);
+}
+
+/*Imagem com texto*/
+
+.container{
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
 .container img{
-    margin:0px;
     width: 100%;
-    height: 70vh;
+    height: 55vh;
     object-fit: cover;
     background-color: transparent;
-    position: relative;
-    display: inline-block;
+    display: block;
 }
 
 .txt-imagem{
     position: absolute;
-    top: 39vh;
-    left: 52%;
-    transform: translate(-50%, -50%);
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -35%);
     font-weight: bold;
     font-size: 5vw;
     text-shadow: 1vw 1vh 2vh black;
@@ -71,12 +94,81 @@ body{
     color: white;
 }
 
+/*Sessão do texto de introdução*/
+
+.introducao{
+    text-align: center;
+    margin: 0px 8vw 10vh 8vw;
+}
+
+.introducao h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5vw;
+    color: rgb(143, 24, 24);
+}
+
+.introducao p{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7vw;
+    color: rgb(80, 80, 80);
+}
+
+/*Sessão do hotel*/
+
+.hotel{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    background-color: #e7e7e7;
+    height: 45vh;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+.txt-hotel{
+    display: flex;
+    flex-direction: column;
+}
+
+.hotel h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5vw;
+    color: rgb(143, 24, 24);
+    padding-left: 8vw;
+}
+
+.hotel p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7vw;
+    color: rgb(80, 80, 80);
+    padding-left: 8vw;
+    margin-top: 0px;
+}
+
+.hotel img{
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+    margin-right: 8vw;
+    margin-left: 1vw;
+    transition:0.30s;
+}
+
+.hotel img:hover{
+    transform: scale(1.05);
+    transition: 0.30s;
+    box-shadow: 0.1vw 0.1vh 1vh rgba(0, 0, 0, 0.5);
+}
+
+/*Cards*/
+
 .galeria-cards{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 1vw;
+    gap: 1.5vw;
     margin-left: 5vw;
     margin-right: 5vw;
     margin-top: 2vh;
@@ -88,16 +180,23 @@ body{
     background-color: white;
     border-radius:1vw;
     box-shadow: 0.1vw 0.1vh 1vh rgba(0, 0, 0, 0.5);
-    width: 19vw;
+    width: 20vw;
     display: flex;
     object-fit: cover;
     flex-direction: column;
     align-items: center;
+    transition: 0.30s;
+}
+
+.card:hover{
+    transition: 0.30s;
+    transform: translateY(-1vh);
+    box-shadow: 0.1vw 0.1vh 1vh rgb(143, 24, 24);
 }
 
 .card img{
     width: 90%;
-    height: 20vh;
+    height: 23vh;
     border-radius: 1vw;
     border: 1px solid black;
     margin-top: 1vh;
@@ -106,8 +205,8 @@ body{
 
 .card p{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3vw;
-    text-align: center;
+    font-size: 1.2vw;
+    text-align: left;
     padding: 0px 1vw 0px 1vw;
     margin:0;
     margin-bottom: 2vh;
@@ -118,7 +217,7 @@ body{
 
 .titulo-card{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     text-align: center;
     font-weight: bold;
     color: rgb(143, 24, 24);
@@ -126,15 +225,76 @@ body{
     margin-bottom: 0.5vh;
 }
 
+/*Rodapé*/
+
 .rodape{
+    display: flex;
+    flex-direction: row;
     background-color: #e7e7e7;
-    text-align: center;
-    padding: 1vh 0;
+    padding: 1vh;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3vw;
+    font-size: 1.5vw;
     color: #666;
     position: relative;
     bottom: 0;
     width: 100%;
     box-shadow: 0px -0.1vh 1vh rgba(0, 0, 0, 0.1);
+    padding-top: 8vh;
+}
+
+.img-copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin-left: 1vw;
+    margin-right: 5vw;
+    flex: 1;
+
+}
+
+.destinos{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: center;
+    margin-right: 5vw;
+    gap: 1vh;
+    text-decoration: none;
+}
+
+.div-destinos{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: top;
+    margin-right: 5vw;
+    gap: 1vh;
+}
+
+.div-destinos h4{
+    margin: 0px 0px 2vh 0px;
+    padding: 0;
+    color: rgb(143, 24, 24);
+    font-weight: bold;
+    font-size: 2.5vh;
+}
+
+.div-destinos ul{
+    align-items: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.div-destinos ul li{
+    align-items: left;
+    cursor: pointer; 
+    margin: 0px 0px 2vh 0px;
+    font-size: 2vh;
+}
+
+.div-destinos ul li:hover{
+    transition: 0.30s;
+    color: rgb(143, 24, 24);
 }
